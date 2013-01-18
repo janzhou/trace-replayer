@@ -1,0 +1,12 @@
+---- sensors_proc_bus Æ¥Åä (11 in 4 ÎÄ¼þ) ----
+Access.c (lib):		if (sensors_proc_bus[i].bus.type == bus->type &&
+Access.c (lib):		    sensors_proc_bus[i].bus.nr == bus->nr)
+Access.c (lib):			return sensors_proc_bus[i].adapter;
+Data.c (lib):sensors_bus *sensors_proc_bus = NULL;
+Data.c (lib):			    sensors_proc_bus[j].adapter)) {
+Data.c (lib):			name->bus.nr = sensors_proc_bus[j].bus.nr;
+Data.h (lib):extern sensors_bus *sensors_proc_bus;
+Data.h (lib):	(el), &sensors_proc_bus, &sensors_proc_bus_count,\
+Init.c (lib):		free_bus(&sensors_proc_bus[i]);
+Init.c (lib):	free(sensors_proc_bus);
+Init.c (lib):	sensors_proc_bus = NULL;
